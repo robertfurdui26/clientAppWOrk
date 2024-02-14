@@ -1,0 +1,17 @@
+<div class="card h-100 shadow-sm" *ngIf="product">
+    <div class="card-body d-flex flex-column">
+      <a href="" class="text-decoration-none">
+        <h2 class="text-uppercase text-dark " >
+          {{product.name}}
+        </h2>
+        <h3 class="tetx-uppercase ">{{product.description}}</h3>
+
+      </a>
+      <span class="mb-2">{{product.price | currency}}</span>
+  
+      <div class="btn-group mt-auto">
+        <button class="btn btn-outline-secondary ">Buy</button>
+        <button class="btn btn-outline-secondary">View</button>
+      </div>
+    </div>
+  </div>

@@ -10,12 +10,10 @@ import { ShopService } from './services/shop.service';
 })
 export class AppComponent implements OnInit {
   title = 'App Work';
-  products: Product[] = [];
 
-  constructor(private shopService : ShopService ){}
+  constructor( ){}
 
   ngOnInit(): void {
-   this.shopService.getProducts().subscribe((result: Product[]) => (this.products = result));
 }
 
 }
